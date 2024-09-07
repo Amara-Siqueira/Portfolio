@@ -1,25 +1,73 @@
 @charset "UTF-8";
-*{
-    margin: 0%;
-    padding: 0%;
+    *{
+        text-align:justify ;
+        margin: 0%;
+        padding: 0%;
+    }
+    /*Smartphones pequenos: 320px a 480px (ex.: iPhone SE)
+    Smartphones médios: 481px a 767px (ex.: smartphones modernos em modo retrato)
+    Tablets e iPads: 768px a 1024px
+    Laptops pequenos e tablets em modo paisagem: 1025px a 1200px
+    Monitores de desktop grandes: Acima de 1200px
+    id
+    id="perfil"
+    id="velha"
+    id="curso"
+    id="noticias"
+    id="perfilPQ"
+    */
+    @media print {
+        body > header{
+            display:none
+        }
+        body > footer{
+            display:none
+        }
+        main{
+            width: 80%
+        }
+    }
+    @media screen and (min-width:480px) and (max-width:767px){
+        /*CELULAR*/
+        body > main{
+            
+            margin:auto;
+            font-size:8px;
+        }
+        header{
+            font-size: 8px;
 }
-@media all {
- *{   
-    margin:0px;
-    padding: 0px;    
-}}
-@media screen and (orientation:portrait  ) {
+
+        img#perfil{display: block;}
+        img#padrao{display: none;}
+        img#velha{display: block;}
+        img#curso{display: block;}
+        img#noticias{display: block;}
+        }
+@media screen and (min-width:767px) {
+        /*DESKTOP*/
+
+    img#perfil{display: none;}
+    img#padrao{display: block;}
+    img#velha{display: block;}
+    img#curso{display: block;}
+    img#noticias{display: block;}
+    }
+/*@media screen and (orientation:portrait  ) {
 body{
-  /*background-size:contain ;*/
+  /*background-size:contain ;
     background-image: url(../Imagens/fundo\ roxo.jpg);
 }
-}
+}*/
+
+
+/*
 img#perfil{ 
    margin: auto;
     height: 255%;
     width: 50%;
-    display: block;
-}
+    
+}*/
 img{
     margin: auto;
     display: block;

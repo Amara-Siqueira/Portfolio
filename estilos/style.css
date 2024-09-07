@@ -55,7 +55,7 @@ main{
     margin: auto;
     background-color: #bec9dd;
     width: 50vw;
-    height: 210vh;
+    min-height: 210vh;
 }
 #voltar{
     border-radius: 15px;
@@ -68,8 +68,25 @@ main{
 {
     background: transparent;
 }
+form{
+    box-shadow:3px 7px 10px #000000be;
+    margin: auto;
+    background-color: #bec9dd;
+    width: 50vw;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+#iemail{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
 
 footer{
+    text-align: center;
+    display: block;
+    margin: 2px;
     padding: 10px;
     color: white;
     background-color: black;
