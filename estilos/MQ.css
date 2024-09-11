@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*Telas pequenas (Mobile)
+320px a 767px
+Telas médias (Tablets)
+768px a 1023px
+Telas grandes (Desktop)
+1024px a 1199px
+Telas extra grandes (Monitores grandes)
+1200px em diante
+    #burguer{cursor: pointer;}
+#burguer:hover{
+    color: black;
+    background-color: white;
+*/
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+#burguer{
+        text-align: center;
+        cursor: pointer;
+        display: block;
+}
+#burguer:hover{
+    color: black;
+    background-color: white;}
+
+nav{ display: none;}
+main{
+    padding: 10px;
+    font-size: 15px;
+    width: 80%;
+}
+
+}
+
+
+
+
+

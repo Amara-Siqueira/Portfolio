@@ -16,10 +16,16 @@ header{
     font-size: 20pt;
 }
 #h1Header{
+    text-align: center;
     margin: 0px;
 background-color: #181CF0;
 }
+#burguer{
+
+    display: none;
+}
 nav{ 
+    display: block;
    box-shadow:3px 7px 10px #000000be;
     background-color:#181CF0;
 }
@@ -28,9 +34,7 @@ nav, a{color: white;
     text-align:left;
 }
 a{ 
-    
     padding: 0pt 15pt 0pt 15pt;
-   
     margin: 1%;
     display: inline;
 }
@@ -40,9 +44,15 @@ a:hover{
     background-color: #A118F0;
     border-radius: 5px;
 }
+
 body{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url(../Imagens/fundo\ roxo.jpg); 
     text-align: center;
+
 }
 h1,h2{
     margin: 5px;
@@ -51,6 +61,7 @@ h1,h2{
     background:linear-gradient(to left, rgb(18, 18, 148) , transparent);
 }
 main{
+    padding: 10px;
     box-shadow:3px 7px 10px #000000be;
     margin: auto;
     background-color: #bec9dd;
