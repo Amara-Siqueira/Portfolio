@@ -38,8 +38,8 @@
             font-size: 8px;
 }
 
-        img#perfil{display: block;}
-        img#padrao{display: none;}
+        img#perfil{display: none;}
+        img#padrao{display: block;}
         img#velha{display: block;}
         img#curso{display: block;}
         img#noticias{display: block;}
